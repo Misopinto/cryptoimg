@@ -46,7 +46,8 @@ if __name__ == "__main__":
     else:
         bin8_fill = np.resize(bin8_fill, shape_arr)
     bin8_resh = bin8_fill.reshape(arr.shape)
-    result = arr * bin8_resh
+    result = bin8_resh * arr
+    
     print(result.shape)
     res = arrtoimg(result)
     res.show()

@@ -1,3 +1,3 @@
 # cryptoimg
 
-The idea behind "cryptoimg" is that a password is usually easily guessed or found but an image contain a large set of very specific information that can be used for encrypt data
+The idea behind "cryptoimg" is that a password can usually be easily guessed or found, but an image contains a large set of highly specific pieces of information that can be used to encrypt data

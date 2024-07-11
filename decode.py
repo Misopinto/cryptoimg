@@ -3,15 +3,6 @@ import numpy as np
 from numpy import random
 import base64
 
-def encode_string(input_string):
-    if isinstance(input_string, str):
-        byte_data = input_string.encode('utf-8')
-        encoded_data = base64.b64encode(byte_data)
-        encoded_string = encoded_data.decode('utf-8')
-        return encoded_string
-    else:
-        raise ValueError("L'input deve essere una stringa")
-
 def decode_string(encoded_string):
     if isinstance(encoded_string, str):
         # Ensure the encoded string is byte-aligned by padding with '='
@@ -23,7 +14,7 @@ def decode_string(encoded_string):
         decoded_string = decoded_data.decode('utf-8')
         return decoded_string
     else:
-        raise ValueError("L'input deve essere una stringa")
+        raise ValueError("The input must be a string")
 
 def imgToarr(img_path):
     imag = Image.open(img_path)
